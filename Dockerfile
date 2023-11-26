@@ -18,4 +18,6 @@ RUN make install
 
 WORKDIR /root/.config/litterbox
 
-CMD ["litterbox", "default"]
+ENTRYPOINT ["litterbox", "-d", "/root/.config/litterbox/litterbox.sqlite3"]
+
+CMD ["default"]
